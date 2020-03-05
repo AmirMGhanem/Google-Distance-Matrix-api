@@ -13,7 +13,7 @@
         <?php
             if(isset($_POST['submit'])){
             $origin = $_POST['o']; $destination = $_POST['d'];
-            $api = file_get_contents("https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&origins=".$origin."&destinations=".$destination."&key=AIzaSyDnaEMCewqAX45i6yRyN6QWPVs8IIBC7eo");
+            $api = file_get_contents("https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&origins=".$origin."&destinations=".$destination."&key=[Your Key]");
             $data = json_decode($api);
         ?>
 
